@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a onclick="showMenu()" class="toggle" href="#">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+           
+            <ul id="nav-list">
+               <li> <a onclick="closeMenu()" class="close" href="#">x</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Portfolio</a></li>
+            </ul>
+            <img src="images/cart.png" class="cart">
+        </nav>
+
+        <img src="images/logo.png" class="logo">
+
+        <div class="text-box">
+            <p>I'm</p>
+            <h1>Arvine</h1>
+            <h3>I love to make awesome websites</h3>
+
+            <div class="row">
+                <a href="">Explore my Website</a>
+                <a href="">Conect with Me <span>&#x2192;</span> </a>
+                <span>You can explore more of my Website And <br> Personal Life Experinces</span>
+
+            </div>
+          
+        </div>
+
+        <div class="social-icons">
+            <a href=""> <img src="images/instagram.png" alt=""></a>
+            <a href=""> <img src="images/telegram.png" alt=""></a>
+            <a href=""> <img src="images/dribble.png" alt=""></a>
+        </div>
+    </div>
+
+
+
+    <script>
+        const nav_bar = document.getElementById("nav-list");
+
+
+        function showMenu(){
+            nav_bar.style.right = "0";
+            console.log("is this working?");
+        }
+
+
+        function closeMenu(){
+            nav_bar.style.right = "-200px";
+        }
+    </script>
+
+    
+</body>
+</html>
